@@ -1,0 +1,17 @@
+ACCESO CORRECTO AL PANEL
+
+La URL correcta del panel es:
+
+/admin/
+
+Ejemplo con Netlify:
+https://TU-SITIO.netlify.app/admin/
+
+La URL antigua:
+/admin/cargar-cursos.html
+
+queda redirigida automáticamente a /admin/.
+
+Si usás cursosia.ar y aparece DNS_PROBE_FINISHED_NXDOMAIN, el problema no es la web: falta configurar el DNS del dominio en NIC.ar/Netlify.
+Mientras tanto usá la URL de Netlify:
+https://TU-SITIO.netlify.app/admin/

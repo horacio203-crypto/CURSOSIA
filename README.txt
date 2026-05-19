@@ -19,7 +19,7 @@ Opción A:
 - También acepta URLs externas en "image".
 
 Opción B:
-- Abrir /admin/cargar-cursos.html.
+- Abrir /admin/.
 - Cargar cursos desde el formulario.
 - En "Imagen de tarjeta", escribir el nombre de archivo ubicado en /assets/courses/ o pegar una URL.
 - Descargar cursos.json.
