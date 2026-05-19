@@ -7,7 +7,7 @@ description: Descubrí los mejores cursos de Inteligencia Artificial,
   tu futuro profesional en 2026.
 date: 2026-05-19T20:40:00.000-03:00
 image: /assets/uploads/chatgpt-image-19-may-2026-20_51_34.png
-published: true
+published: false
 ---
 
 La inteligencia artificial dejó de ser una tecnología “del futuro” para convertirse en una herramienta concreta de trabajo, negocios y productividad. En 2026, aprender IA ya no es una ventaja opcional: es una habilidad cada vez más buscada por empresas, emprendedores y profesionales independientes.
