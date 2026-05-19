@@ -1,0 +1,112 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+site_url: "https://cursosia.ar"
+display_url: "https://cursosia.ar"
+logo_url: "/assets/logo-cursosia.png"
+locale: "es"
+
+collections:
+  - name: "configuracion"
+    label: "Configuración de la web"
+    files:
+      - name: "site"
+        label: "Portada, SEO, textos y footer"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Título SEO", name: "title", widget: "string"}
+              - {label: "Descripción SEO", name: "description", widget: "text"}
+              - {label: "Keywords", name: "keywords", widget: "string", required: false}
+          - label: "Marca"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Eslogan", name: "slogan", widget: "string"}
+              - {label: "Email de contacto", name: "contactEmail", widget: "string", required: false}
+          - label: "Portada"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Insignia superior", name: "badge", widget: "string"}
+              - {label: "Título antes del destacado", name: "titleBefore", widget: "string"}
+              - {label: "Texto destacado del título", name: "titleHighlight", widget: "string"}
+              - {label: "Texto descriptivo", name: "lead", widget: "text"}
+              - {label: "Texto del buscador", name: "searchLabel", widget: "string"}
+              - {label: "Placeholder del buscador", name: "searchPlaceholder", widget: "string"}
+          - label: "Métricas"
+            name: "metrics"
+            widget: "list"
+            fields:
+              - {label: "Valor", name: "value", widget: "string"}
+              - {label: "Texto", name: "label", widget: "string"}
+          - label: "Secciones"
+            name: "sections"
+            widget: "object"
+            fields:
+              - {label: "Kicker cursos", name: "coursesKicker", widget: "string"}
+              - {label: "Título cursos", name: "coursesTitle", widget: "string"}
+              - {label: "Texto cursos", name: "coursesText", widget: "text"}
+              - {label: "Kicker SEO", name: "seoKicker", widget: "string"}
+              - {label: "Título SEO comercial", name: "seoTitle", widget: "string"}
+              - {label: "Texto SEO comercial", name: "seoText", widget: "text"}
+              - {label: "Kicker newsletter", name: "newsletterKicker", widget: "string"}
+              - {label: "Título newsletter", name: "newsletterTitle", widget: "string"}
+              - {label: "Texto newsletter", name: "newsletterText", widget: "text"}
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Texto footer", name: "text", widget: "string"}
+              - {label: "Texto desarrollo", name: "developerText", widget: "string"}
+              - {label: "Nombre desarrollador", name: "developerName", widget: "string"}
+              - {label: "URL desarrollador", name: "developerUrl", widget: "string"}
+
+  - name: "cursos"
+    label: "Cursos"
+    files:
+      - name: "cursos"
+        label: "Listado de cursos"
+        file: "data/cursos.json"
+        format: "json"
+        fields:
+          - label: "Cursos"
+            name: ""
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.provider}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Categoría", name: "category", widget: "select", options: ["IA Generativa", "Automatización", "Programación IA", "Negocios digitales", "Prompt engineering", "Diseño con IA", "Cursos IA gratis", "Marketing IA", "Productividad"]}
+              - {label: "Proveedor / Plataforma", name: "provider", widget: "string"}
+              - {label: "Nivel", name: "level", widget: "select", options: ["Principiante", "Intermedio", "Avanzado"]}
+              - {label: "Rating", name: "rating", widget: "string", default: "4.8"}
+              - {label: "Precio", name: "price", widget: "string", default: "A consultar"}
+              - {label: "Etiqueta visual", name: "badge", widget: "string", default: "Destacado", required: false}
+              - {label: "Tags SEO", name: "tags", widget: "string", required: false}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Imagen del curso", name: "image", widget: "image", required: false}
+              - {label: "Link afiliado o externo", name: "link", widget: "string", required: false}
+              - {label: "Destacado", name: "featured", widget: "boolean", default: true, required: false}
+
+  - name: "blog"
+    label: "Blog SEO"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Descripción SEO", name: "description", widget: "text"}
+      - {label: "Fecha", name: "date", widget: "datetime"}
+      - {label: "Imagen", name: "image", widget: "image", required: false}
+      - {label: "Publicado", name: "published", widget: "boolean", default: true}
+      - {label: "Contenido", name: "body", widget: "markdown"}

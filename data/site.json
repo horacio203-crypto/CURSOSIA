@@ -1,0 +1,55 @@
+{
+  "seo": {
+    "title": "CursosIA | El comparador argentino de cursos de IA",
+    "description": "CursosIA es el comparador argentino de cursos de IA. Encontrá, compará y elegí cursos de ChatGPT, inteligencia artificial generativa, automatización, programación IA, marketing y negocios digitales.",
+    "keywords": "cursos IA, cursos inteligencia artificial Argentina, comparador de cursos IA, curso ChatGPT Argentina, IA generativa, automatización con IA, prompt engineering, Python IA"
+  },
+  "brand": {
+    "name": "CursosIA",
+    "slogan": "El comparador argentino de cursos de IA",
+    "contactEmail": "contacto@cursosia.ar"
+  },
+  "hero": {
+    "badge": "#1 en comparación de cursos de IA en Argentina",
+    "titleBefore": "Elegí mejor dónde aprender",
+    "titleHighlight": "Inteligencia Artificial",
+    "lead": "CursosIA compara cursos, academias, niveles, valor comercial y aplicación práctica para que el usuario tome una decisión clara antes de comprar.",
+    "searchLabel": "Buscar por tema, profesión, herramienta o academia",
+    "searchPlaceholder": "Ej: ChatGPT para abogados, Python IA, IA para negocios"
+  },
+  "metrics": [
+    {
+      "value": "+250.000",
+      "label": "Estudiantes felices"
+    },
+    {
+      "value": "+18.000",
+      "label": "Cursos disponibles"
+    },
+    {
+      "value": "150+",
+      "label": "Plataformas"
+    },
+    {
+      "value": "Verificados",
+      "label": "Contenido de calidad"
+    }
+  ],
+  "sections": {
+    "coursesKicker": "CURSOS DESTACADOS",
+    "coursesTitle": "Cursos destacados listos para monetizar",
+    "coursesText": "Editá cursos, imágenes, precios, plataformas y links de afiliado desde el panel administrador.",
+    "seoKicker": "SEO COMERCIAL AVANZADO",
+    "seoTitle": "Arquitectura preparada para competir desde el inicio.",
+    "seoText": "La web está orientada a búsquedas comerciales: comparativas, intención de compra, rankings, categorías, cursos destacados, enlaces patrocinados, newsletter y páginas internas indexables.",
+    "newsletterKicker": "CAPTACIÓN DE LEADS",
+    "newsletterTitle": "Convertí búsquedas en base de datos propia.",
+    "newsletterText": "Formulario compatible con Netlify Forms para captar emails y enviar alertas de nuevos cursos, rankings, ofertas y guías IA."
+  },
+  "footer": {
+    "text": "El comparador argentino de cursos de IA",
+    "developerText": "Desarrollo de la web:",
+    "developerName": "MAXIT Servicios Digitales",
+    "developerUrl": "https://www.maxit.ar/"
+  }
+}

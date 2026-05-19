@@ -1,0 +1,39 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<radialGradient id="bg" cx="50%" cy="50%" r="60%"><stop stop-color="#1836A8"/><stop offset=".45" stop-color="#090F35"/><stop offset="1" stop-color="#030611"/></radialGradient>
+<linearGradient id="g" x1="0" y1="0" x2="1200" y2="760"><stop stop-color="#22EAFF"/><stop offset=".52" stop-color="#3677FF"/><stop offset="1" stop-color="#B43DFF"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".04"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feColorMatrix in="b" type="matrix" values="0 0 0 0 .2 0 0 0 0 .5 0 0 0 0 1 0 0 0 .8 0"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="blur"><feGaussianBlur stdDeviation="30"/></filter>
+</defs>
+<rect width="1200" height="760" rx="46" fill="url(#bg)"/>
+<circle cx="240" cy="600" r="260" fill="#00D5FF" opacity=".18" filter="url(#blur)"/>
+<circle cx="950" cy="120" r="290" fill="#8A3BFF" opacity=".26" filter="url(#blur)"/>
+<path d="M80 540 C260 410, 420 590, 610 430 S940 300, 1130 390" fill="none" stroke="url(#g)" stroke-width="5" opacity=".55"/>
+<path d="M90 615 C290 500, 420 650, 655 490 S910 420, 1135 470" fill="none" stroke="url(#g)" stroke-width="2" opacity=".35"/>
+<g opacity=".46">
+<path d="M750 580c160-130 255-180 410-200" stroke="url(#g)" stroke-width="2" opacity=".8"/>
+<path d="M770 635c120-95 240-142 365-150" stroke="url(#g)" stroke-width="2" opacity=".45"/>
+<circle cx="840" cy="515" r="3" fill="#22EAFF"/><circle cx="920" cy="462" r="2" fill="#B43DFF"/><circle cx="1030" cy="430" r="3" fill="#3677FF"/>
+</g>
+<rect x="70" y="72" width="1060" height="616" rx="36" fill="url(#glass)" stroke="#6EA7FF" stroke-opacity=".26"/>
+<g filter="url(#glow)">
+<circle cx="385" cy="365" r="145" fill="none" stroke="url(#g)" stroke-width="14"/>
+<circle cx="385" cy="365" r="105" fill="#101A52" stroke="#7CDFFF" stroke-opacity=".55" stroke-width="2"/>
+<text x="318" y="402" font-family="Inter, Arial" font-size="105" fill="#FFFFFF" font-weight="900">IA</text>
+<circle cx="275" cy="245" r="7" fill="#22EAFF"/><circle cx="505" cy="248" r="7" fill="#B43DFF"/><circle cx="524" cy="492" r="6" fill="#22EAFF"/><circle cx="250" cy="485" r="5" fill="#3677FF"/>
+<path d="M242 365c40-126 226-150 286-12" stroke="#7DEBFF" stroke-width="2" opacity=".5" fill="none"/>
+<path d="M545 366c-43 145-245 138-317 21" stroke="#A640FF" stroke-width="2" opacity=".55" fill="none"/>
+</g>
+<g>
+<rect x="650" y="165" width="390" height="78" rx="20" fill="#08122F" stroke="#6EA7FF" stroke-opacity=".35"/>
+<text x="680" y="197" font-family="Inter, Arial" fill="#9CEFFF" font-size="15" font-weight="800">COMPARACIÓN INTELIGENTE</text>
+<text x="680" y="222" font-family="Inter, Arial" fill="#FFFFFF" font-size="23" font-weight="900">Cursos reales, métricas comerciales</text>
+<rect x="650" y="270" width="390" height="76" rx="18" fill="#0A1436" stroke="#FFFFFF" stroke-opacity=".12"/>
+<rect x="670" y="290" width="40" height="40" rx="12" fill="#10B981"/><text x="683" y="319" font-family="Arial" fill="#fff" font-size="24" font-weight="900">1</text><text x="730" y="300" font-family="Inter, Arial" fill="#FFFFFF" font-size="19" font-weight="900">ChatGPT para negocios</text><text x="730" y="324" font-family="Inter, Arial" fill="#AEB9D7" font-size="14">Alta conversión comercial</text><text x="975" y="316" font-family="Inter, Arial" fill="#FFD968" font-size="18" font-weight="900">4.9</text>
+<rect x="650" y="365" width="390" height="76" rx="18" fill="#0A1436" stroke="#FFFFFF" stroke-opacity=".12"/>
+<rect x="670" y="385" width="40" height="40" rx="12" fill="#7C3AED"/><text x="683" y="414" font-family="Arial" fill="#fff" font-size="24" font-weight="900">2</text><text x="730" y="395" font-family="Inter, Arial" fill="#FFFFFF" font-size="19" font-weight="900">Automatización con IA</text><text x="730" y="419" font-family="Inter, Arial" fill="#AEB9D7" font-size="14">Procesos, ventas, productividad</text><text x="975" y="411" font-family="Inter, Arial" fill="#FFD968" font-size="18" font-weight="900">4.8</text>
+<rect x="650" y="460" width="390" height="76" rx="18" fill="#0A1436" stroke="#FFFFFF" stroke-opacity=".12"/>
+<rect x="670" y="480" width="40" height="40" rx="12" fill="#2563EB"/><text x="683" y="509" font-family="Arial" fill="#fff" font-size="24" font-weight="900">3</text><text x="730" y="490" font-family="Inter, Arial" fill="#FFFFFF" font-size="19" font-weight="900">Python + IA</text><text x="730" y="514" font-family="Inter, Arial" fill="#AEB9D7" font-size="14">Ruta técnica y profesional</text><text x="975" y="506" font-family="Inter, Arial" fill="#FFD968" font-size="18" font-weight="900">4.7</text>
+</g>
+</svg>

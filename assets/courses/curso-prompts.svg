@@ -1,0 +1,18 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="900" y2="520"><stop stop-color="#071126"/><stop offset="1" stop-color="#4F46E5"/></linearGradient>
+<radialGradient id="r" cx="72%" cy="22%" r="70%"><stop stop-color="#ffffff" stop-opacity=".28"/><stop offset=".45" stop-color="#ffffff" stop-opacity=".06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+</defs>
+<rect width="900" height="520" rx="42" fill="#071126"/>
+<rect width="900" height="520" rx="42" fill="url(#g)" opacity=".86"/>
+<circle cx="720" cy="90" r="220" fill="url(#r)"/>
+<circle cx="180" cy="410" r="190" fill="#20E7FF" opacity=".16" filter="url(#blur)"/>
+<path d="M80 360 C220 250 350 410 500 300 S710 230 840 280" stroke="#fff" stroke-opacity=".36" stroke-width="5" fill="none"/>
+<rect x="58" y="58" width="784" height="404" rx="34" fill="rgba(0,0,0,.24)" stroke="rgba(255,255,255,.22)"/>
+<text x="96" y="158" font-family="Inter, Arial" fill="#9EEFFF" font-size="25" font-weight="900" letter-spacing="3">CURSOSIA</text>
+<text x="96" y="265" font-family="Inter, Arial" fill="#fff" font-size="54" font-weight="900">Prompt Engineering</text>
+<text x="96" y="322" font-family="Inter, Arial" fill="#C9D4EF" font-size="25" font-weight="600">Curso destacado · Comparador argentino de IA</text>
+<circle cx="700" cy="260" r="105" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.38)" stroke-width="2"/>
+<text x="645" y="292" font-family="Inter, Arial" fill="#fff" font-size="76" font-weight="900">AI</text>
+</svg>
