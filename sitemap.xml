@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://cursosia.ar/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://cursosia.ar/admin/cargar-cursos.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cursosia.ar/legal/privacidad.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cursosia.ar/legal/terminos.html</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://cursosia.ar/blog/mejores-cursos-ia-argentina.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/blog/curso-chatgpt-argentina.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/blog/prompt-engineering.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/ia-generativa.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/automatizacion-ia.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/negocios-ia.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/programacion-ia.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/diseno-con-ia.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cursosia.ar/categorias/cursos-ia-gratis.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+</urlset>

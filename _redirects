@@ -1,0 +1,6 @@
+https://www.cursosia.ar/* https://cursosia.ar/:splat 301!
+https://cursosia.com.ar/* https://cursosia.ar/:splat 301!
+https://www.cursosia.com.ar/* https://cursosia.ar/:splat 301!
+/cursos /#cursos 301
+/buscador /#buscador 301
+/admin /admin/cargar-cursos.html 301

@@ -1,0 +1,30 @@
+CURSOSIA CON PANEL ADMINISTRADOR REAL
+
+Esta versión incorpora Decap CMS en /admin/.
+
+PASOS:
+1. Crear cuenta gratis en GitHub.
+2. Crear repositorio nuevo y subir esta carpeta.
+3. En Netlify: Add new site > Import from Git.
+4. Elegir GitHub y el repositorio.
+5. Deploy.
+6. En Netlify: Identity > Enable Identity.
+7. En Identity > Services activar Git Gateway.
+8. En Identity > Invite users, invitar tu email.
+9. Abrir https://cursosia.ar/admin/
+
+El panel permite editar:
+- SEO principal.
+- Frases de portada.
+- Eslogan.
+- Textos del buscador.
+- Métricas.
+- Cursos.
+- Imágenes.
+- Precios.
+- Links de afiliado.
+- Blog SEO.
+- Footer.
+
+IMPORTANTE:
+Si subís la web arrastrando ZIP manualmente, la web funciona, pero el panel no guarda cambios. Para panel real necesitás GitHub + Netlify conectado.
