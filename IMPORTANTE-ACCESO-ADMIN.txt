@@ -8,7 +8,7 @@ Ejemplo con Netlify:
 https://TU-SITIO.netlify.app/admin/
 
 La URL antigua:
-/admin/cargar-cursos.html
+/admin/
 
 queda redirigida automáticamente a /admin/.
 

@@ -1,0 +1,15 @@
+CORRECCIÓN ADMIN
+
+Se eliminó el bucle que enviaba:
+/admin -> /admin/cargar-cursos.html
+
+Ahora queda correcto:
+/admin/cargar-cursos.html -> /admin/
+/admin -> /admin/
+
+Después de subir a GitHub y esperar Netlify Published, probar:
+https://TU-SITIO.netlify.app/admin/
+
+Si seguís viendo la versión vieja:
+1. Netlify > Deploys > Trigger deploy > Clear cache and deploy site.
+2. Abrir en incógnito o Ctrl+F5.
