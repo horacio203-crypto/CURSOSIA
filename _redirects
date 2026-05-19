@@ -1,6 +1,4 @@
 # CursosIA redirects
-/admin/cargar-cursos.html /admin/ 301!
-/admin /admin/ 301!
 /cursos /#cursos 301!
 /buscador /#buscador 301!
 

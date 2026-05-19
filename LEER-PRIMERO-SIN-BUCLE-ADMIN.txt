@@ -1,0 +1,14 @@
+CORRECCIÓN DEFINITIVA DEL PANEL
+
+Se eliminaron las redirecciones de /admin en el archivo _redirects.
+Netlify debe servir directamente:
+
+/admin/index.html
+
+URL correcta:
+https://TU-SITIO.netlify.app/admin/
+
+Si aparece ERR_TOO_MANY_REDIRECTS:
+1. Verificá que _redirects NO tenga líneas que empiecen con /admin.
+2. En Netlify: Deploys > Trigger deploy > Clear cache and deploy site.
+3. Abrí en incógnito.
