@@ -1,6 +1,6 @@
 ---
 title: Cómo Elegir el Mejor Curso de Inteligencia Artificial en 2026 y No Perder
-  Dinero
+  Dinero.
 description: Descubrí los mejores cursos de Inteligencia Artificial,
   automatización, programación, marketing y tecnología. Comprará capacitaciones
   actualizadas, aprendé IA desde cero y encontrá el curso ideal para potenciar
