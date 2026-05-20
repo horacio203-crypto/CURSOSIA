@@ -1,0 +1,13 @@
+LOGO CURSOSIA ACTUALIZADO
+
+Se reemplazó el logo de la web por el nuevo logo enviado.
+
+Archivos actualizados:
+- assets/logo-cursosia.png
+- assets/logo-cursosia-large.png
+- assets/favicon.png
+- assets/apple-touch-icon.png
+- styles.css
+
+Subir todo el contenido a GitHub reemplazando la versión anterior.
+Netlify publicará automáticamente.

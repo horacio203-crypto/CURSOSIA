@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Blog SEO | CursosIA</title>
+  <meta name="description" content="Artículos, guías y comparativas sobre cursos de inteligencia artificial, ChatGPT, automatización, programación IA y negocios digitales.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-page{padding:70px clamp(18px,6vw,90px)}.blog-hero{max-width:980px;margin:0 auto 38px;text-align:center}
+    .blog-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.post-card{overflow:hidden;border:1px solid rgba(117,158,255,.26);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.028));box-shadow:0 24px 80px rgba(0,0,0,.28)}
+    .post-card img{width:100%;height:190px;object-fit:cover;display:block;background:#071126}.post-body{padding:22px}.post-card small{color:#9eecff;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+    .post-card h2{font-size:1.25rem;line-height:1.18;letter-spacing:-.04em;margin:12px 0}.post-card p{color:#aeb9d7;line-height:1.55}.post-card a.read{display:inline-flex;margin-top:12px;padding:11px 15px;border-radius:13px;background:#fff;color:#071126;font-weight:1000}
+    @media(max-width:900px){.blog-list{grid-template-columns:1fr}.post-card img{height:220px}}
+  </style>
+</head>
+<body>
+  <div class="fx-noise"></div><div class="fx-grid"></div>
+  <header class="header"><a href="index.html" class="brand"><img src="assets/logo-cursosia.png" alt="CursosIA" width="180"></a><nav class="nav" style="display:flex;position:static;background:transparent;border:0;padding:0"><a href="index.html">Inicio</a><a href="index.html#cursos">Cursos</a><a href="blog.html">Blog</a><a href="admin/">Admin</a></nav></header>
+  <main class="blog-page">
+    <section class="blog-hero"><p class="pretitle">BLOG SEO COMERCIAL</p><h1>Guías para elegir cursos de <span>Inteligencia Artificial</span></h1><p class="lead">Contenido pensado para captar tráfico comprador, responder dudas reales y posicionar CursosIA en búsquedas comerciales.</p></section>
+    <section class="blog-list" id="blogList"></section>
+  </main>
+  <footer class="footer"><div class="footer-brand"><img src="assets/logo-cursosia.png" alt="CursosIA"><div><strong>CursosIA</strong><span>El comparador argentino de cursos de IA</span></div></div><nav><a href="legal/privacidad.html">Privacidad</a><a href="legal/terminos.html">Términos</a><a href="admin/">Admin</a></nav></footer>
+  <script>
+    function esc(s){return (s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+    async function loadBlog(){let posts=[];try{const r=await fetch("data/blog.json",{cache:"no-store"});if(r.ok)posts=await r.json()}catch(e){}
+      posts=posts.filter(p=>p.published!==false);const list=document.getElementById("blogList");
+      list.innerHTML=posts.length?posts.map(p=>`<article class="post-card"><img src="${p.image||'assets/hero-premium.svg'}" alt="${esc(p.title)}" loading="lazy"><div class="post-body"><small>${esc(p.category||'Blog SEO')} · ${esc(p.date||'')}</small><h2>${esc(p.title)}</h2><p>${esc(p.description)}</p><a class="read" href="articulo.html?slug=${encodeURIComponent(p.slug)}">Leer artículo</a></div></article>`).join(""):"<p>No hay artículos publicados todavía.</p>";
+    } loadBlog();
+  </script>
+</body></html>

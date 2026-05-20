@@ -96,17 +96,26 @@ collections:
               - {label: "Link afiliado o externo", name: "link", widget: "string", required: false}
               - {label: "Destacado", name: "featured", widget: "boolean", default: true, required: false}
 
+
   - name: "blog"
     label: "Blog SEO"
-    folder: "content/blog"
-    create: true
-    slug: "{{slug}}"
-    extension: "md"
-    format: "frontmatter"
-    fields:
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Descripción SEO", name: "description", widget: "text"}
-      - {label: "Fecha", name: "date", widget: "datetime"}
-      - {label: "Imagen", name: "image", widget: "image", required: false}
-      - {label: "Publicado", name: "published", widget: "boolean", default: true}
-      - {label: "Contenido", name: "body", widget: "markdown"}
+    files:
+      - name: "blog"
+        label: "Artículos publicados"
+        file: "data/blog.json"
+        format: "json"
+        fields:
+          - label: "Artículos"
+            name: ""
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Slug URL", name: "slug", widget: "string", hint: "Ej: mejores-cursos-ia-argentina-2026. Sin espacios ni acentos."}
+              - {label: "Descripción SEO", name: "description", widget: "text"}
+              - {label: "Categoría", name: "category", widget: "string", default: "Blog SEO"}
+              - {label: "Fecha", name: "date", widget: "string", hint: "Formato recomendado: 2026-05-19"}
+              - {label: "Imagen", name: "image", widget: "image", required: false}
+              - {label: "Publicado", name: "published", widget: "boolean", default: true}
+              - {label: "Keywords SEO", name: "keywords", widget: "string", required: false}
+              - {label: "Contenido", name: "body", widget: "markdown"}

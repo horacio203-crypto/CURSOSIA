@@ -1,0 +1,16 @@
+BLOG PÚBLICO ACTIVADO
+
+Ahora el blog se ve en:
+/blog.html
+
+Los artículos individuales se abren así:
+/articulo.html?slug=mejores-cursos-ia-argentina-2026
+
+Desde el panel:
+Admin > Blog SEO > editar artículos > guardar/publicar.
+
+Los artículos se guardan en:
+/data/blog.json
+
+Importante:
+El slug debe ir sin espacios ni acentos.

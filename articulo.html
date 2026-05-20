@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Artículo | CursosIA</title><meta name="description" content="Artículo del blog de CursosIA."><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css">
+  <style>
+    .article-page{padding:58px clamp(18px,6vw,90px)}.article-wrap{max-width:920px;margin:0 auto}.article-hero{border:1px solid rgba(117,158,255,.28);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.028));overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.28)}
+    .article-hero img{width:100%;height:360px;object-fit:cover;background:#071126}.article-head{padding:32px}.article-head small{color:#9eecff;font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+    .article-content{padding:34px 6px;color:#d9e3ff;font-size:1.05rem;line-height:1.8}.article-content h1,.article-content h2,.article-content h3{color:#fff;letter-spacing:-.045em;line-height:1.1}.article-content h2{font-size:1.8rem;margin-top:34px}.article-content ul{padding-left:24px}.article-content li{margin:8px 0}.back-blog{display:inline-flex;margin-bottom:22px;color:#9eecff;font-weight:900}
+  </style>
+</head>
+<body>
+  <div class="fx-noise"></div><div class="fx-grid"></div>
+  <header class="header"><a href="index.html" class="brand"><img src="assets/logo-cursosia.png" alt="CursosIA" width="180"></a><nav class="nav" style="display:flex;position:static;background:transparent;border:0;padding:0"><a href="index.html">Inicio</a><a href="blog.html">Blog</a><a href="admin/">Admin</a></nav></header>
+  <main class="article-page"><div class="article-wrap"><a class="back-blog" href="blog.html">← Volver al blog</a><article id="article"></article></div></main>
+  <script>
+    function esc(s){return (s||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
+    function md(md){let out="",list=false;(md||"").split(/\r?\n/).forEach(raw=>{const l=raw.trim();if(!l){if(list){out+="</ul>";list=false}return}
+      if(l.startsWith("## ")){if(list){out+="</ul>";list=false}out+=`<h2>${esc(l.slice(3))}</h2>`}
+      else if(l.startsWith("# ")){if(list){out+="</ul>";list=false}out+=`<h1>${esc(l.slice(2))}</h1>`}
+      else if(l.startsWith("- ")){if(!list){out+="<ul>";list=true}out+=`<li>${esc(l.slice(2))}</li>`}
+      else{if(list){out+="</ul>";list=false}out+=`<p>${esc(l)}</p>`}}); if(list)out+="</ul>"; return out}
+    async function load(){let posts=[];try{const r=await fetch("data/blog.json",{cache:"no-store"});if(r.ok)posts=await r.json()}catch(e){} const slug=new URLSearchParams(location.search).get("slug");const p=posts.find(x=>x.slug===slug&&x.published!==false)||posts.find(x=>x.published!==false);const box=document.getElementById("article");if(!p){box.innerHTML="<p>No se encontró el artículo.</p>";return}document.title=p.title+" | CursosIA";document.querySelector('meta[name="description"]').setAttribute("content",p.description||"");box.innerHTML=`<section class="article-hero"><img src="${p.image||'assets/hero-premium.svg'}" alt="${esc(p.title)}"><div class="article-head"><small>${esc(p.category||'Blog SEO')} · ${esc(p.date||'')}</small><h1>${esc(p.title)}</h1><p class="lead">${esc(p.description||"")}</p></div></section><section class="article-content">${md(p.body)}</section>`} load();
+  </script>
+</body></html>
